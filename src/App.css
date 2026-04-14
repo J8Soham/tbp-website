@@ -1,0 +1,36 @@
+#root {
+    text-align: center;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    margin: 0 15px 0 15px;
+}
+
+.nav-item {
+    margin: 0 15px 0 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #ee5656;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}

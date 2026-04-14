@@ -1,11 +1,13 @@
+import "./App.css";
+import HomePage from "./pages/HomePage/HomePage";
+import NavBar from './components/NavBar/navBar';
+
 function App() {
   return (
-    <>
-      <div className="container">
-        <h1>Clean Slate</h1>
-        <p>Ready for a new project.</p>
-      </div>
-    </>
+    <div>
+      <NavBar />
+      <HomePage />
+    </div>
   )
 }
 
