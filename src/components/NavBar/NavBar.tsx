@@ -1,20 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-const NavBar = () => {
-   return (
-      <div className="nav-bar">
-         <h1>TBP</h1>
+const NavBar: React.FC = () => {
+  const links = ['Home', 'Events', 'Officers', 'Instagram', 'Twitter', 'Facebook', 'Forums'];
 
-         <div className="nav-links">
-            <div className="nav-item">Home</div>
-            <div className="nav-item">About</div>
-            <div className="nav-item">Contact</div>
-            <div className="nav-item">Projects</div>
-            <div className="nav-item">Media</div>
-            <div className="nav-item">Events</div>
-         </div>
-      </div>
-   );
-}
+  return (
+    <nav className="nav-bar">
+      <ul className="nav-links">
+        {links.map((link) => (
+          <li 
+            key={link} 
+            className={`nav-item ${link === 'Home' ? 'active' : ''}`}
+          >
+            {link}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
 export default NavBar;
